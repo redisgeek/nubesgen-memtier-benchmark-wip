@@ -18,13 +18,3 @@ variable "location" {
   type        = string
   description = "The Azure region where all resources in this example should be created"
 }
-
-variable "azure_redis_host" {
-  type        = string
-  description = "The Azure Cache for Redis hostname"
-}
-
-variable "azure_redis_password" {
-  type        = string
-  description = "The Azure Cache for Redis password"
-}

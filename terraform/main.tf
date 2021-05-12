@@ -35,15 +35,4 @@ module "application" {
   application_name  = local.application_name
   environment       = local.environment
   location          = var.location
-
-  azure_redis_host       = module.redis.azure_redis_host
-  azure_redis_password   = module.redis.azure_redis_password
-}
-
-module "redis" {
-  source            = "./modules/redis"
-  resource_group    = azurerm_resource_group.main.name
-  application_name  = local.application_name
-  environment       = local.environment
-  location          = var.location
 }

@@ -62,9 +62,5 @@ resource "azurerm_app_service" "application" {
     "WEBSITES_PORT"                       = "8080"
 
     # These are app specific environment variables
-
-    "REDIS_HOST"          = var.azure_redis_host
-    "REDIS_PASSWORD"      = var.azure_redis_password
-    "REDIS_PORT"          = "6380"
   }
 }

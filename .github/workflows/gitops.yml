@@ -13,8 +13,8 @@ on:
       - 'env-*'
 
 env:
-  APPLICATION_NAME: 'demo-8750-9584-2234-5380'
-  CONTAINER_REGISTRY: 'demo8750958422345380'
+  APPLICATION_NAME: 'demo-5238-1221-0652-2860'
+  CONTAINER_REGISTRY: 'demo5238122106522860'
 
 jobs:
   build-and-deploy:
@@ -72,5 +72,5 @@ jobs:
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'app-demo-8750-9584-2234-5380-${{ env.ENVIRONMENT }}-001'
+          app-name: 'app-demo-5238-1221-0652-2860-${{ env.ENVIRONMENT }}-001'
           images: 'acr${{ env.CONTAINER_REGISTRY }}${{ env.ENVIRONMENT }}001.azurecr.io/${{ env.APPLICATION_NAME }}/${{ env.APPLICATION_NAME }}:${{ github.sha }}'

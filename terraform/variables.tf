@@ -1,7 +1,7 @@
 variable "application_name" {
   type        = string
   description = "The name of your application"
-  default     = "demo-8750-9584-2234-5380"
+  default     = "demo-5238-1221-0652-2860"
 }
 
 variable "environment" {
